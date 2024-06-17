@@ -9,7 +9,10 @@
     footer: [#datetime.today().display() #h(1fr) #counter(page).display() / #context counter(page).final().at(0)]
   )
 
-  set heading(numbering: "1.")
+  set heading(
+    numbering: "1.", 
+    bookmarked: false
+  )
   // Heading should not have styles, it breaks the reading flow
   show heading: it => text(
       size: 11pt,
@@ -40,6 +43,8 @@
       ) <modified-entry>]
     }
   }
+
+  set enum(full: true)
   
   doc
 }

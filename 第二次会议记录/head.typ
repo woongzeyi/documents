@@ -2,11 +2,12 @@
 
 #let head(doc, n, date, tstart, tend) = [
   #set page(
-    header: align(end)[2024年毕业典礼筹委会议（#int-to-cn-num(n)）]
+    header: align(end)[2024年度毕业典礼筹委会议（#int-to-cn-num(n)）]
   )
   
   #align(center)[
     *2024年度毕业典礼筹委会议（#int-to-cn-num(n)）*
+    
     #table(
         columns: 2,
         align: (right, left),

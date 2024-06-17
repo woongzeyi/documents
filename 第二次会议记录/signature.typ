@@ -1,5 +1,3 @@
-#v(2em)
-
 #grid(align: center, columns: (1fr, 1fr), 
   [
     毕业典礼筹委会文书
