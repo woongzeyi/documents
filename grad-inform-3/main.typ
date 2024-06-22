@@ -1,8 +1,8 @@
 #import "@preview/cuti:0.2.1": show-cn-fakebold
 #show: show-cn-fakebold
-#set text(font: "KaiTi")
+#set text(font: "Noto Serif CJK SC")
 
-#align(center, image("fylogo2.png", width: 50%))
+#align(center, image("fylogo2.png", width: 40%))
 
 #v(2em)
 
