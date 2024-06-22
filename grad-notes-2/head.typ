@@ -11,11 +11,11 @@
     #table(
         columns: 2,
         align: (right, left),
-        [日期：], [#date.display("[year]年[month padding:none]月[day]日")（星期#int-to-cn-num(date.weekday())）],
-        [时间：], [#tstart.display("[hour padding:none repr:12]:[minute padding:none][period case:lower]") – #tend.display("[hour padding:none repr:12]:[minute padding:none][period case:lower]")],
-        [地点：], [新山南洋大学校友会议室厅],
+        [日　期：], [#date.display("[year]年[month padding:none]月[day]日")（星期#int-to-cn-num(date.weekday())）],
+        [时　间：], [#tstart.display("[hour padding:none repr:12]:[minute padding:none][period case:lower]") – #tend.display("[hour padding:none repr:12]:[minute padding:none][period case:lower]")],
+        [地　点：], [新山南洋大学校友会议室厅],
         [召集人：], [郑叶枫],
-        [记录：], [黄则义],
+        [记　录：], [黄则义],
     )
   ]
   

@@ -33,7 +33,7 @@
           let c = to-string(it.body.children.slice(1).join()).split("|")
           if c.len() == 2 {
             it.body.children.slice(0, 2).join()
-            c.at(1)
+            c.at(1).trim()
           } else {
             it.body
           }
@@ -148,10 +148,10 @@
     columns: (
       measure([0.0.0]).width + 10pt, 
       1fr, 
-      measure([Ｘ]).width + 10pt
+      measure([ＸＸＸ]).width + 10pt
     ), 
     align: (start, start, start),
-    [*项目*], [*会议报告/议决事项*], [*注*],
+    [*项目*], [*会议报告/议决事项*], [*备注*],
     ..merge_reporters(parse(doc))
   )
   
