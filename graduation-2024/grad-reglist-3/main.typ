@@ -27,7 +27,7 @@
   [*学号*],
   [*名字*],
   [*签名*],
-  ..namelist.zip(([],)*namelist.len()).flatten()
+  ..namelist.zip(([],) * namelist.len()).flatten()
 )
 
 *公　　假*：#underline[#namelist.len()份]

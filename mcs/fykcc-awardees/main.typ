@@ -1,44 +1,75 @@
 #let leaderboard(file) = {
-  align(center, table(
-    columns: 5, 
-    align: (center + horizon, center + horizon, center, center, start + horizon),
-    [], [], [], [], [分数],
-    ..for i in csv(file) {
-      (
-        table.cell(rowspan: 3, for j in i.at(0) {j + "\n"}),
-        table.cell(rowspan: 3, i.at(1)),
-        i.slice(2, 4),
-        table.cell(rowspan: 3, i.at(-1)),
-        i.slice(4, -1)
-      )
-    }.flatten()
-  ))
+  align(
+    center,
+    table(
+      columns: 5,
+      align: (
+        center + horizon,
+        center + horizon,
+        center,
+        center,
+        start + horizon,
+      ),
+      [], [], [], [], [分数],
+      ..for i in csv(file) {
+        (
+          table.cell(
+            rowspan: 3,
+            for j in i.at(0) {
+              j + "\n"
+            },
+          ),
+          table.cell(rowspan: 3, i.at(1)),
+          i.slice(2, 4),
+          table.cell(rowspan: 3, i.at(-1)),
+          i.slice(4, -1),
+        )
+      }.flatten()
+    ),
+  )
 }
 
 #let individual_board1(file) = {
-  align(center, table(
-    columns: 5, 
-    align: (center + horizon, center + horizon, center, center, start),
-    [], [], [], [], [分数], 
-    ..csv(file).flatten()
-  ))
+  align(
+    center,
+    table(
+      columns: 5,
+      align: (center + horizon, center + horizon, center, center, start),
+      [], [], [], [], [分数],
+      ..csv(file).flatten()
+    ),
+  )
 }
 
 #let individual_board2(file) = {
-  align(center, table(
-    columns: 5, 
-    align: (center + horizon, center + horizon, center, center, start + horizon),
-    [], [], [], [], [分数], 
-    ..for i in csv(file) {
-      (
-        table.cell(rowspan: 3, for j in i.at(0) {j + "\n"}),
-        table.cell(rowspan: 3, i.at(1)),
-        i.slice(2, 4),
-        table.cell(rowspan: 3, i.at(-1)),
-        i.slice(4, -1)
-      )
-    }.flatten()
-  ))
+  align(
+    center,
+    table(
+      columns: 5,
+      align: (
+        center + horizon,
+        center + horizon,
+        center,
+        center,
+        start + horizon,
+      ),
+      [], [], [], [], [分数],
+      ..for i in csv(file) {
+        (
+          table.cell(
+            rowspan: 3,
+            for j in i.at(0) {
+              j + "\n"
+            },
+          ),
+          table.cell(rowspan: 3, i.at(1)),
+          i.slice(2, 4),
+          table.cell(rowspan: 3, i.at(-1)),
+          i.slice(4, -1),
+        )
+      }.flatten()
+    ),
+  )
 }
 
 
@@ -49,20 +80,25 @@
 #set heading(numbering: "1.1.a.")
 
 #set document(
-  author: "Woong Ze Yi", 
-  title: "FYKCC - Awardees", 
-  date: datetime.today()
+  author: "Woong Ze Yi",
+  title: "FYKCC - Awardees",
+  date: datetime.today(),
 )
 #set page(
   header: align(end)[2024年校内电脑挑战赛 - 比赛结果],
-  footer: [#datetime.today().display() #h(1fr) #counter(page).display() / #context counter(page).final().at(0)]
+  footer: [#datetime.today().display() #h(1fr) #counter(page).display() /
+    #context counter(page).final().at(0)],
 )
 
-#align(center, text(size: 18pt, weight: "bold")[2024年校内电脑挑战赛 - 比赛结果])
+#align(
+  center,
+  text(size: 18pt, weight: "bold")[2024年校内电脑挑战赛 - 比赛结果],
+)
 
 = 总排行
 
-本赛总分为100分；第一轮及第二轮挑战皆占总分50分。本赛设有五份奖项：冠、亚、季军及优秀奖两份。
+本赛总分为100分；第一轮及第二轮挑战皆占总分50分。本赛设有五份奖项：冠、亚、季军
+及优秀奖两份。
 
 #columns(2)[
   === 初阶组
@@ -82,9 +118,9 @@
   === 初阶组
 
   #individual_board1("beginners_round1.csv")
-  
+
   #colbreak()
-  
+
   === 高阶组
 
   #individual_board1("intermediates_round1.csv")
@@ -100,9 +136,9 @@
   === 初阶组
 
   #individual_board2("beginners_round2.csv")
-  
+
   #colbreak()
-  
+
   === 高阶组
 
   #individual_board2("intermediates_round2.csv")

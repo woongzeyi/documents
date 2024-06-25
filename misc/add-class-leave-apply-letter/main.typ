@@ -2,13 +2,13 @@
 #show: show-cn-fakebold
 #set text(font: "Noto Serif CJK SC")
 
-6, Jalan Bakti 33, 
+6, Jalan Bakti 33,
 
-Taman Mutiara Rini, 
+Taman Mutiara Rini,
 
-81300 Skudai, 
+81300 Skudai,
 
-Johor. 
+Johor.
 
 #v(1em)
 
@@ -20,11 +20,11 @@ Johor.
 
 宽柔中学古来分校教务处主任
 
-Lot 1591 (Zon 24), 
+Lot 1591 (Zon 24),
 
-Jalan Persiaran Indahpura 6, 
+Jalan Persiaran Indahpura 6,
 
-Taman Indahpura, 
+Taman Indahpura,
 
 #underline[81000 Kulai, Johor. ]
 #h(1fr)
@@ -40,7 +40,8 @@ Taman Indahpura,
 
 #v(1em)
 
-小儿黄则义（192141）就读贵校高三电机电子（2）班，2024年6月12日由于身体不适，需在家里休养，故无法上课，特具此函申请病假一天。
+小儿黄则义（192141）就读贵校高三电机电子（2）班，2024年6月12日由于身体不适，需在
+家里休养，故无法上课，特具此函申请病假一天。
 
 #v(1em)
 
