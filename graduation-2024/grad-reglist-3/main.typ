@@ -2,6 +2,11 @@
 #show: show-cn-fakebold
 #set text(font: "Noto Serif CJK SC")
 
+#set page(
+  header: align(end)[2024年度毕业典礼筹委会议（三）],
+  footer: [#datetime.today().display() #h(1fr) #counter(page).display() / #context counter(page).final().at(0)],
+)
+
 #align(center)[
   #image("fylogo2.png", width: 40%)
   #text(size: 18pt)[*签到表*]
@@ -11,7 +16,7 @@
 
 *日　　期*：2024年7月31日（星期三）
 
-*时　　间*：10:50pm - 12:10pm (第5 - 6节)
+*时　　间*：10:50pm - 12:10pm（第5 - 6节）
 
 *地　　点*：新山南洋大学校友会议室厅
 
@@ -23,7 +28,7 @@
   align: center,
   [*序*],
   [*班级*],
-  [*桌号*],
+  [*座号*],
   [*学号*],
   [*名字*],
   [*签名*],
